@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Octogone Bordé</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+    }
+
+    .outer {
+      width: 88vmin;
+      height: 88vmin;
+      background: #e60000;
+      clip-path: polygon(
+        30% 0%, 70% 0%,
+        100% 30%, 100% 70%,
+        70% 100%, 30% 100%,
+        0% 70%, 0% 30%
+      );
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .middle {
+      width: 85vmin;
+      height: 85vmin;
+      background: white;
+      clip-path: inherit;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .inner-white {
+      width: 82vmin;
+      height: 82vmin;
+      background: white;
+      clip-path: inherit;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .content {
+      width: 79vmin;
+      height: 79vmin;
+      background: #b30000;
+      clip-path: inherit;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 2rem;
+      color: white;
+      margin-top: -3vmin;
+    }
+
+    .logo {
+      width: 220px;
+      height: auto;
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1rem;
+      margin: 0.5rem 0;
+    }
+
+    .highlight {
+      color: #00ff99;
+      font-weight: bold;
+    }
+
+    .cta {
+      margin-top: 1rem;
+      background-color: #00ff99;
+      color: #ffffff;
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    .cta:hover {
+      background-color: #00cc77;
+    }
+
+    @media (max-width: 600px) {
+      .logo {
+        width: 180px;
+      }
+      h1 {
+        font-size: 1.2rem;
+      }
+      p {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="outer">
+    <div class="middle">
+      <div class="inner-white">
+        <div class="content">
+          <img src="3.png" alt="Logo" class="logo" loading="lazy" />
+          <h1>We turn your brand into a <span class="highlight">✨ VISUAL EXPERIENCE ✨</span></h1>
+          <p>🎥 Cinematic Videos</p>
+          <p>📸 Scroll-Stopping Photos</p>
+          <p>✨ Viral Edits</p>
+          <p>From cafés & restaurants to boutiques, salons & more — we shoot it all.</p>
+          <p>No filters needed — just <strong>pure content magic</strong>.</p>
+          <a class="cta" href="https://www.instagram.com/design_tounsi?igsh=MWU4Z2g4YW40aGoxZg==" target="_blank">DM us now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
